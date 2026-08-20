@@ -1,0 +1,81 @@
+# Jekyll + Minimal Mistakes configuration
+# Site for Sorel Ferris: https://sorelferris.github.io/
+
+title: "Sorel Ferris"
+name: "Sorel Ferris"
+description: >
+  Robotics × AI × VLA. Building the bridge from research papers to
+  real-world robot systems. Founder → Industrial PI (3-5 year horizon).
+author:
+  name: "Sorel Ferris"
+  avatar: "/assets/images/avatar.jpg"
+
+locale: "en-US"
+timezone: "Asia/Shanghai"
+
+url: "https://sorelferris.github.io"
+baseurl: ""
+repository: "sorelferris/sorelferris.github.io"
+
+theme: "minimal-mistakes-jekyll"
+
+permalink: /:title/
+paginate: 6
+
+# Search engine
+google_analytics: ""
+breadcrumbs: false
+
+# Markdown engine
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/sorelferris"
+    - label: "RSS Feed"
+      icon: "fas fa-rss"
+      url: "/feed.xml"
+
+# Defaults for posts/pages
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+
+# Collections for sub-pages
+collections:
+  roadmap:
+    output: true
+    permalink: /roadmap/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
