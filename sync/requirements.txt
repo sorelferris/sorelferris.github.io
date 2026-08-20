@@ -1,0 +1,3 @@
+# sync package is stdlib-only by design (cron runs on bare Linux)
+# urllib.request + sqlite3 + json + datetime + hashlib + subprocess
+# No pip install needed.
