@@ -14,7 +14,7 @@ Last refreshed: 2026-08-20*
 > live on the [Roadmap](/roadmap/) page. Inspired by
 > [Derek Sivers' /now page](https://nownownow.com/about).
 
-_Scanned 64 recent user sessions._
+_Scanned 42 recent user sessions._
 
 ## 🟢 Shipped / Completed
 
@@ -22,16 +22,16 @@ _What got done in this period._
 
 | Date | From session | Snippet |
 |------|-------------|---------|
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | ✅ Memory 已更新:记录 "代码/权重验证不可行" + "canonical prompt 路径迁移" 两条事实 |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 两处归档模板都已更新。现在 step 1 todo 完成。进入 step 2 (同步到 cron job): |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 改动完成。总结这次操作的真实状况: |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | ## ✅ 已完成 (8 项修改) |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 完成。简单总结: |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | git-credentials 已修复 |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | ## ✅ 已完成 (4 个里程碑) |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 我现在无法验证 (沙箱 curl 走代理,而 github pages 在 CDN 后) ,但 build status API 显示无 error。预计 1-3 分钟内 build 完成。**3 分 |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | Pages build **status: building**,无 error。 等 build 完成 (1-3 分钟),然后验证: |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | ## ✅ 个人主页搭建完成 — 等 build**已完成**: |
+| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | - `05a56bb7dcbf` — Daily arXiv 09:00 (已 patch code/weights) |
+| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | md` — canonical prompt (已 patch step 3 |
+| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | Cron job 已创建 (`a715afcab3ff`),9月1号 00:00 自动跑。现在沉淀设计决策到 skill + memory: |
+| 2026-08-19 | 设置每日 arXiv 精读定时任务 | prompt 已更新（步骤 4 加了 4 |
+| 2026-08-19 | 设置每日 arXiv 精读定时任务 | **Prompt 已修复**：步骤 4 新增 **4 |
+| 2026-08-14 | 分散顺延飞书积压任务 | Cron prompt 已更新,固化"关键词 +冒号"模式。下次周五 15:00 自动跑就用这个偏好。 |
+| 2026-08-13 | DeepPaperNote飞书落地完成 | - Pitfall 9 emoji 已修复 |
+| 2026-08-05 | 飞书任务制定与论文研读 | **踩坑记录(已沉淀 skill)** |
+| 2026-08-05 | 飞书任务制定与论文研读 | - 已创建 skill `feishu-task-comment-no-scope-fallback` 固化此 fallback |
+| 2026-08-04 | OpenCLI availability check | **已写入 memory**，下次不再犯。 |
 
 ## 🟡 In flight / Investigating
 
@@ -39,16 +39,16 @@ _Active threads that aren't done yet._
 
 | Date | From session | Snippet |
 |------|-------------|---------|
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 两处归档模板都已更新。现在 step 1 todo 完成。进入 step 2 (同步到 cron job): |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 最终 todo 全部完成: |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | # 测试 git 能不能用这个 token |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | \| Outcome (3/6月后回看) \| 未来回看机制 (TODO) \| 月级 \| |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | **🟡 卡在什么 (in-flight)** — "正在调研 X / 没想清楚 Y" |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | **📚 新收藏 / 调研** — 用户说"加一个 repo / 收藏一篇论文" |
-| 2026-08-18 | 用户画像建立 | - 有 Daily arXiv 追踪 cron |
-| 2026-08-18 | 用户画像建立 | 5` 调研、`Demo-JEPA` 调研、`SUGAR` 调研、`Pi0 |
-| 2026-08-18 | 用户画像建立 | 6 RECAP` 调研、`WAM Survey` 整理 |
-| 2026-08-14 | 分散顺延飞书积压任务 | - 🧠调研 VLA-JEPA、LingBot-VA、FastWAM 三种 WAM 策略 |
+| 2026-08-19 | 设置每日 arXiv 精读定时任务 | - `last_run_at` 仍是 `null`、`last_status` 仍是 `null`——**这是正常的**（skill 说过 `run` 后 1-3 分钟才写回，subagent 还在跑 |
+| 2026-08-19 | 设置每日 arXiv 精读定时任务 | 好问题——但**文档现在还没建出来**（3 个 subagent 还在跑 DeepPaperNote 15-stage pipeline）。让我先看 subagent 进度，再回答你这个真问题。 |
+| 2026-08-12 | 重新分配过期飞书任务 | **未完成 / 已知阻塞** |
+| 2026-08-05 | 飞书任务制定与论文研读 | cn/client/todo/detail |
+| 2026-07-17 | RoboTTT 学习任务创建 | cn/client/todo/detail |
+| 2026-07-13 | (no title) | **Known issues / TODO at handoff time** — orin ACT 推理慢 |
+| 2026-07-13 | 飞书过期任务重新安排 | 每个已交付项目只保留:**仓库链接 + 一句话 + 状态 + 3 行接手要点**(精简版),开发中的 2 个项目保留全部详细子系统/指标/配方/研读重点/已知 TODO/参考飞书文档。 |
+| 2026-07-02 | (no title) | I'll start by exploring my environment to understand what tools are available for research, then sys |
+| 2026-07-02 | 具身智能算法岗JD调研 | 我来调研这个方向。先建一个 todo，然后并行委派三个 worker 分别抓取 JD、薪酬、公司画像三类数据。 |
+| 2026-07-02 | 具身智能算法岗JD调研 | 3 张卡片全部发送成功，message_id 都拿到了。更新 todo： |
 
 ## 🔴 Blocked / Waiting on
 
@@ -56,16 +56,16 @@ _Things that need input from you or others._
 
 | Date | From session | Snippet |
 |------|-------------|---------|
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 等你回复 "1"(keyword 启发式)或 "2"(+ GitHub 二次验证)后,我再启用对应 fallback 路径,精度可从 0% 提升到 ~50-70%。 |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | **🔴 阻塞 / 风险** — "X 等到 Y / 等你回复" |
-| 2026-08-18 | 用户画像建立 | \| Hermes 长期记忆 \| ⏸️ 未写入（等你决定） \| |
+| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | **❓ 需要你拍板的 3 件事** |
+| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 等用户回 "1/2/3/4/5" 选下一步: |
 | 2026-08-14 | 分散顺延飞书积压任务 | **4 套方案**等你拍板: |
 | 2026-08-02 | 简短回复确认意图 | **等你拍板,4 个按钮 / 自由指令都行**: |
 | 2026-08-01 | 延期飞书任务 | - 已发提案，**未执行任何写操作**，等你拍板： |
-| 2026-07-29 | 飞书任务延期重排 | ## 等你拍板 |
+| 2026-07-14 | Feishu Wiki Document Update | 已发到 Home 频道（纯文本兜底，卡片那条被安全拦截了）。等你回「加」或「不加」我再决定要不要动文档。 |
+| 2026-07-13 | 飞书过期任务重新安排 | 收到 — **"整体后移"** = 方案 A 精神,但**天数我给的是默认 +3 天**,需要你拍板数字(顺延不可逆,不能我自己定)。 |
 | 2026-07-13 | 飞书过期任务重新安排 | 等你拍板 → 立刻批量执行 → 验证改成功没。 |
+| 2026-07-13 | 飞书过期任务重新安排 | 但有个**问题** — 跨度 32 天,DAILY_CAP=3h 是默认假设,**需要你确认这是你想要的密度**。我先用卡片展示完整方案 + 3 个密度档位按钮: |
 | 2026-07-02 | (no title) | py) was blocked |
-| 2026-06-29 | Clarifying the user's request | ### 我建议的执行计划(等你拍板) |
 
 ## 💡 Decisions made
 
@@ -73,25 +73,22 @@ _Choices that were explicit, with context._
 
 | Date | From session | Snippet |
 |------|-------------|---------|
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 关于优化 Daily arXiv 定时推送(加"代码开源/模型权重开源"标注),我有方案 — 但有几个决策需要你拍板,因为会影响 cron prompt 写法、卡片版式、归档 markdown 模板: |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | hermes/skills/lark/lark-cron-scheduled-cards/references/prompt-template-arxiv-digest |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | com/ |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | **标注图标**:`💻 Code` `🤗 Weights` (两个状态各一:`✅ 有 / ❌ 无 / ❓ 未明`) |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | **写入归档**:当日 callout 旁边加一行 `**代码/权重**:` + 每篇 `- [1] |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | com/xxx \| 🤗✅ hf |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | co/yyy` |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | patch canonical prompt-template-arxiv-digest |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 把这次改动同步进 cron job `05a56bb7dcbf` 的 prompt 字段 |
-| 2026-08-20 | 优化每日 arXiv 飞书定时推送 | 在 himalaya skill 下补一份新 baseline reference (今天 8/20 之后下次跑的记录会写在这里,含 pitfall #55/56) |
+| 2026-08-18 | 用户画像建立 | **我的决定（按你授权）**： |
+| 2026-08-14 | 分散顺延飞书积压任务 | 我倾向 **方案 A**(AI 自动读每日工作 → 总结成 emoji 列表写入),**但写到文档后立即发飞书卡片给你看**,不满意可以让我重写/手工改。 |
+| 2026-08-05 | 飞书任务制定与论文研读 | - 选 1:先做方法论综述(#1) |
+| 2026-08-05 | 飞书任务制定与论文研读 | - 选 2:直接跳到 MVP(#3) |
+| 2026-08-05 | 飞书任务制定与论文研读 | - 选 3:先调研再选 |
+| 2026-08-05 | 飞书任务制定与论文研读 | - 选 4:先和我对话把 4 个关键问题聊清楚 |
+| 2026-08-05 | 飞书任务制定与论文研读 | 你选了"选 1:先做方法论综述"。我直接出了一稿,放在飞书文档里回链到任务评论,然后给你卡片式摘要。 |
+| 2026-06-11 | 归档文档标签与摘要修复 | **方案 A**：把"中文摘要"放到 `<li>` 内部（用 `<br/>` 分隔） |
+| 2026-06-11 | 归档文档标签与摘要修复 | **方案 B**：把 `<ul>` 拆开成多个 `<p>` 块（每篇一篇用单独段落 + 列表项） |
+| 2026-06-11 | 归档文档标签与摘要修复 | 方案 A 最简单： |
 
 ## 📚 New bookmarks / Reading
 
 _Things added to your watch list._
 
-| Date | From session | Snippet |
-|------|-------------|---------|
-| 2026-08-18 | 用户画像建立 | 或者你想走另一个路线：**我先基于现有记忆和 GitHub 收藏，生成一份「推断版」详细职业画像**（明确标注哪些是事实 / 哪些是推断），你先看，再决定要不要补充事实。你说哪种？ |
-| 2026-08-18 | 用户画像建立 | - 那个精简版相对干净（只有研究方向 + 协作偏好 + 极少量 GitHub 收藏） |
+_Nothing recorded this period._
 
 
 ### What's *not* on this page

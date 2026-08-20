@@ -49,7 +49,7 @@ def recent_user_sessions(since: dt.datetime, limit: int = 50) -> list[dict]:
 def session_user_messages(session_id: str) -> list[dict]:
     """提取某 session 里 role='user' 的消息内容 (用于决策/总结扫描)."""
     sql = """
-        SELECT id, content, created_at
+        SELECT id, content, timestamp
         FROM messages
         WHERE session_id = ? AND role = 'user' AND content IS NOT NULL
         ORDER BY id ASC
@@ -58,25 +58,25 @@ def session_user_messages(session_id: str) -> list[dict]:
         cur = db.execute(sql, [session_id])
         out = []
         for row in cur.fetchall():
-            mid, content, created_at = row
+            mid, content, ts = row
             out.append({
                 "id": mid,
                 "content": content,
-                "created_at": created_at,
+                "timestamp": ts,
             })
         return out
 
 
 def session_assistant_messages(session_id: str) -> list[dict]:
     sql = """
-        SELECT id, content, created_at
+        SELECT id, content, timestamp
         FROM messages
         WHERE session_id = ? AND role = 'assistant' AND content IS NOT NULL
         ORDER BY id ASC
     """
     with _conn() as db:
         cur = db.execute(sql, [session_id])
-        return [{"id": r[0], "content": r[1], "created_at": r[2]} for r in cur.fetchall()]
+        return [{"id": r[0], "content": r[1], "timestamp": r[2]} for r in cur.fetchall()]
 
 
 def session_messages_iter(since: dt.datetime, source_filter=None) -> Iterator[dict]:
