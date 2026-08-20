@@ -17,7 +17,7 @@ url: "https://sorelferris.github.io"
 baseurl: ""
 repository: "sorelferris/sorelferris.github.io"
 
-theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
 
 permalink: /:title/
 paginate: 6

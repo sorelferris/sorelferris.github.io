@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-# Minimal Mistakes theme
-gem "minimal-mistakes-jekyll", "~> 4.24"
+# Minimal Mistakes theme is provided via remote_theme in _config.yml
+# (GitHub Pages does not bundle minimal-mistakes-jekyll gem in github-pages 232)
 
 # Jekyll plugins
 group :jekyll_plugins do
